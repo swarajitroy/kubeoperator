@@ -38,6 +38,22 @@ ubuntu@ip-172-31-22-219:~$ operator-sdk version
 operator-sdk version: "v1.15.0", commit: "f6326e832a8a5e5453d0ad25e86714a0de2c0fc8", kubernetes version: "1.21", go version: "go1.16.10", GOOS: "linux", GOARCH: "amd64"
 
 
+```
+
+```
+ubuntu@ip-172-31-22-219:~$ curl -LO https://go.dev/dl/go1.17.5.linux-amd64.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    75  100    75    0     0    903      0 --:--:-- --:--:-- --:--:--   903
+100  128M  100  128M    0     0  74.5M      0  0:00:01  0:00:01 --:--:-- 86.3M
+
+ubuntu@ip-172-31-22-219:~$ ls -l go1.17.5.linux-amd64.tar.gz
+-rw-rw-r-- 1 ubuntu ubuntu 134808667 Dec 19 08:57 go1.17.5.linux-amd64.tar.gz
+
+root@ip-172-31-22-219:/home/ubuntu#  tar -C /usr/local -xzf go1.17.5.linux-amd64.tar.gz
+root@ip-172-31-22-219:/usr/bin# export PATH=$PATH:/usr/local/go/bin
+root@ip-172-31-22-219:/usr/bin# go version
+go version go1.17.5 linux/amd64
 
 
 ```
